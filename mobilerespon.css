@@ -1,0 +1,260 @@
+.header-prin{
+    height: 60px;
+}
+
+.navbar{
+    height: 60px;
+}
+
+.barra-icono{
+    width: 20%;
+}
+
+.icono-y2 img{
+    width: 70px;
+    height: 70px;
+    margin-left: 5px;
+}
+
+
+
+/* NAVBAR RESPONSIVE  */
+
+.buscador-pagina-prin input{
+    display: none;
+}
+
+.icono-busqueda{
+    display: none;
+}
+
+.busqueda-microfono{
+    display: none;
+}
+
+.desaparecer{
+    display: none;
+}
+
+.texto-lista{
+    margin: 3px;
+}
+.icono-lupa{
+    margin: 3px;
+}
+.seccion-busqueda-usuario{
+    margin-right: 0;
+}
+
+/* BARRA DE BUSQUEDA RAPIDA RESPONSIVE */
+
+.barrasuperior{
+    height: 50px;
+}
+
+.busqueda-por-categoria{
+    height: 50px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.cuadro-busqueda{
+    flex-wrap: wrap;
+}
+
+.nombre-busqueda{
+    margin: 3px;
+}
+
+.nombre-busqueda a{
+    font-size: clamp(.8rem, 1vw, 1.5rem);
+}
+
+/* MAIN VIDEOS RESPONSIVE */
+
+.main-videos{
+    grid-template-columns: repeat(1, minmax(250px, 644px));
+    /* grid-template-columns: repeat(auto-fit,300px); */
+    padding: 10px;
+    
+}
+
+.miniaturas-info{
+    width: 100%
+}
+.miniatura-video{
+    width: 100%;
+
+}
+
+.miniatura-video iframe{
+    width: 100%;
+    height: 200px;
+}
+
+.miniaturas-info:hover{
+    transform: scale(1);
+    background-color: #20202000;
+}
+
+@media only screen and (min-width:644px) and (max-width:767px) {
+
+    .main-videos{
+        grid-template-columns: repeat(2, minmax(300px, 767px));
+        /* grid-template-columns: repeat(auto-fill,300px);
+        padding: 10px; */
+        
+    }
+    
+    .miniaturas-info{
+        width: 100%
+    }
+    .miniatura-video{
+        width: 100%;
+    
+    }
+    
+    .miniatura-video iframe{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .miniaturas-info:hover{
+        transform: scale(1);
+        background-color: #20202000;
+    }
+    
+
+    
+
+}
+
+  
+
+/* DE 767 A 1023 */
+
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+
+    .buscador-pagina-prin input{
+        display: block;
+        width: 100%;
+
+    }
+    
+    .icono-busqueda{
+        width: 60px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 2px 2px 0;
+    }
+    
+    .busqueda-microfono{
+        background-color: #323232;
+        border-radius: 100%;
+        padding: 9px;
+        margin: 10px;
+    }
+    
+    .icono-lupa{
+       display: none;
+    }
+
+    .desaparecer{
+        display: block;
+        margin: 10px;
+    }
+    
+    
+
+    .main-videos{
+        grid-template-columns: repeat(3, minmax(200px, 1023px));
+        /* grid-template-columns: repeat(auto-fill,300px);
+        padding: 10px; */
+        
+    }
+    
+    .miniaturas-info{
+        width: 100%
+    }
+    .miniatura-video{
+        width: 100%;
+    
+    }
+    
+    .miniatura-video iframe{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .miniaturas-info:hover{
+        transform: scale(1);
+        background-color: #20202000;
+    }
+
+}
+
+
+/* DE 1024 En Adelante */
+
+@media only screen and (min-width:1024px) and (max-width:1920px) {
+
+    .buscador-pagina-prin input{
+        display: block;
+        width: 100%;
+        
+    }
+    
+    .icono-busqueda{
+        width: 60px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 2px 2px 0;
+    }
+    
+    .busqueda-microfono{
+        background-color: #323232;
+        border-radius: 100%;
+        padding: 9px;
+        margin: 10px;
+    }
+    
+    .icono-lupa{
+       display: none;
+    }
+
+    .desaparecer{
+        display: block;
+        margin: 10px;
+    }
+    
+
+    .main-videos{
+        grid-template-columns: repeat(4, minmax(300px, 1920px));
+        /* grid-template-columns: repeat(auto-fill,300px);
+        padding: 50px; */
+        
+    }
+    
+    .miniaturas-info{
+        width: 100%
+    }
+    .miniatura-video{
+        width: 100%;
+    
+    }
+    
+    .miniatura-video iframe{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .miniaturas-info:hover{
+        transform: scale(1);
+        background-color: #20202000;
+    }
+
+}
